@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173", // allow Vite frontend
+    origin: ["https://chatapp-qiz2.onrender.com"], // allow Vite frontend
     methods: ["GET", "POST"],
     credentials: true
   },
