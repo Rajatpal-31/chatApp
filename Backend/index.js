@@ -21,10 +21,8 @@ const URI = process.env.MONGO_URI;
 try {
   mongoose.connect(URI ,{
 
-   useNewUrlParser: true,
-      useUnifiedTopology: true,
-      ssl: true,
-      sslValidate: false,
+       tls: true,                          
+      tlsAllowInvalidCertificates: true,
   });
 } catch (error) {
   console.log(error);
