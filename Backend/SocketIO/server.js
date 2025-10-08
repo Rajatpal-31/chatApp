@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: ["https://chatapp-309y.onrender.com"], // allow Vite frontend
+    origin: ["https://chatapp-xu0z.onrender.com"], // allow Vite frontend
     methods: ["GET", "POST"],
     credentials: true
   },
